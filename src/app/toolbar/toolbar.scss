@@ -1,0 +1,47 @@
+@import "~@angular/material/theming";
+@import "../../theme";
+
+$profile-picture-size: 150px;
+$profile-picture-offset: 15px;
+$profile-picture: "https://cataas.com/cat";
+$border-style: 4px solid;
+
+.toolbar-layout {
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+}
+
+.toolbars {
+  display: flex;
+  flex: 2 1 0px;
+  flex-direction: column;
+
+  #name {
+    flex: 1 1 0px;
+  }
+
+  mat-toolbar {
+    padding-left: $profile-picture-size - $profile-picture-offset;
+
+    &.nav {
+      justify-content: flex-end;
+    }
+  }
+}
+
+.profile-picture {
+  background-image: url($profile-picture);
+  background-size: cover;
+
+  width: $profile-picture-size;
+  height: $profile-picture-size;
+
+  position: absolute;
+  left: -$profile-picture-offset * 2;
+  top: -$profile-picture-offset;
+
+  border-radius: 1000px;
+  border: $border-style
+}
