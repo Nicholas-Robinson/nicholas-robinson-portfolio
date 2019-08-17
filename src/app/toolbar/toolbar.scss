@@ -1,9 +1,9 @@
 @import "~@angular/material/theming";
-@import "../../theme";
+@import "../../assets/pictures";
+@import "../../styles/theme";
 
 $profile-picture-size: 150px;
-$profile-picture-offset: 15px;
-$profile-picture: "https://cataas.com/cat";
+$profile-picture-offset: 18px;
 $border-style: 4px solid;
 
 .toolbar-layout {
@@ -15,7 +15,7 @@ $border-style: 4px solid;
 
 .toolbars {
   display: flex;
-  flex: 2 1 0px;
+  flex: 1 1 0px;
   flex-direction: column;
 
   #name {
@@ -23,7 +23,7 @@ $border-style: 4px solid;
   }
 
   mat-toolbar {
-    padding-left: $profile-picture-size - $profile-picture-offset;
+    padding-left: $profile-picture-size;
 
     &.nav {
       justify-content: flex-end;
@@ -38,9 +38,9 @@ $border-style: 4px solid;
   width: $profile-picture-size;
   height: $profile-picture-size;
 
+  z-index: 10;
   position: absolute;
-  left: -$profile-picture-offset * 2;
-  top: -$profile-picture-offset;
+  left: -$profile-picture-offset;
 
   border-radius: 1000px;
   border: $border-style
