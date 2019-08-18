@@ -6,3 +6,8 @@ html, body {
   padding: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+.mat-tab-body-content {
+  justify-content: center;
+  display: flex;
+}

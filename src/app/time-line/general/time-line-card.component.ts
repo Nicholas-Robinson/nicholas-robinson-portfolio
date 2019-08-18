@@ -10,7 +10,7 @@ import { ITimelineCard } from "../i-time-line-config";
       }
 
       .timeline-card {
-          max-width: 400px;
+          max-width: 450px;
       }
 
       iframe {
@@ -19,7 +19,8 @@ import { ITimelineCard } from "../i-time-line-config";
       }
 
       img {
-          width: 100%;
+          max-height: 315px;
+          max-width: 100%;
       }
   `],
   template: `
@@ -43,7 +44,8 @@ import { ITimelineCard } from "../i-time-line-config";
 
                           <img *ngSwitchCase="'image'" [src]="trustUrl(media.src)" [alt]="media.alt">
 
-                          <iframe [src]="trustUrl(media.src)"
+                          <iframe *ngSwitchCase="'video'"
+                                  [src]="trustUrl(media.src)"
                                   frameborder="0"
                                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                   allowfullscreen></iframe>
@@ -77,8 +79,14 @@ export class TimeLineCardComponent {
   @Input()
   public card: ITimelineCard;
 
+  private readonly safeUrlCache: { [url: string]: SafeUrl } = {};
+
   public trustUrl(url: string): SafeUrl {
-    return this.sanitiser.bypassSecurityTrustResourceUrl(url);
+    if (this.safeUrlCache[url]) {
+      return this.safeUrlCache[url];
+    }
+
+    return this.safeUrlCache[url] = this.sanitiser.bypassSecurityTrustResourceUrl(url);
   }
 
 }

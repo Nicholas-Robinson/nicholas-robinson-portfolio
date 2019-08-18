@@ -11,7 +11,7 @@ import { Component, Input } from "@angular/core";
       }
 
       #period-content {
-          margin-left: 200px;
+          margin-left: 165px;
           display: flex;
       }
 
