@@ -32,19 +32,40 @@ export class AppComponent {
           period: "2016 - present",
           logo: "https://lh6.googleusercontent.com/akemJnuhJS1RnODRxP4B327Lbw0SOLb3LgImj19meqSuPVuNo1ktSpDYT4U=w2400",
           endpoint: "http://grantadesign.com",
-          components: [GrantaComponent]
+          cards: [
+            {
+              title: "asd",
+              subTitle: "Something else ",
+              body: "Such wow",
+              media: [
+                { type: "video", src: "https://www.youtube.com/embed/aGCFkjCt_48", alt: "In action tutorial", name: "In action" }
+              ],
+              links: [
+                { text: "Click me", url: "http://www.google.com" }
+              ],
+            },
+            {
+              title: "asd",
+              subTitle: "Something else ",
+              body: "Such wow",
+              media: [
+                { type: "video", src: "https://www.youtube.com/embed/aGCFkjCt_48", alt: "In action tutorial", name: "In action" }
+              ],
+              links: [],
+            },
+          ]
         },
         {
           period: "2015 - 2016",
           logo: "https://lh6.googleusercontent.com/LvecF7tf_YkTe9llYNa-f3x7uGqFHeSICaZsBdj9SMJDpy7M4JcP8kITiyA=w2400",
           endpoint: "https://www.entelect.co.za/",
-          components: [GrantaComponent]
+          cards: [],
         },
         {
           period: "2014 - 2015",
           logo: "https://lh4.googleusercontent.com/tppeCrgL3ee-q7NdUvcjA5PEcJLDh-OrCxO_ADMI-TTwmwLL5-mGsmi90LA=w2400",
           endpoint: "http://www.psybergate.com/",
-          components: [GrantaComponent]
+          cards: [],
         },
       ],
     },
@@ -57,7 +78,7 @@ export class AppComponent {
           period: "2012-2015",
           logo: "https://lh4.googleusercontent.com/3T_VzrhNfo2HoZYewestRwRR99QI9ifvgSI6OKDP8PjoEahPbvR0ehhZus8=w2400",
           endpoint: "https://www.up.ac.za/",
-          components: [GrantaComponent]
+          cards: [],
         }
       ],
     },
@@ -69,7 +90,7 @@ export class AppComponent {
         {
           period: "2016 - present",
           logo: "https://grantadesign.com/wp-content/themes/grantatheme/img/logo-granta-ansys.png",
-          components: [GrantaComponent]
+          cards: [],
         }
       ],
     }

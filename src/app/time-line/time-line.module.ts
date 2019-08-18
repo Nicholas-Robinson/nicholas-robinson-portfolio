@@ -1,36 +1,43 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
-import { MatButtonModule, MatChipsModule, MatDividerModule, MatExpansionModule, MatIconModule, MatListModule } from "@angular/material";
-import { RouterModule } from "@angular/router";
+import {
+  MatButtonModule,
+  MatCardModule,
+  MatChipsModule,
+  MatDividerModule,
+  MatExpansionModule,
+  MatIconModule,
+  MatListModule,
+  MatTabsModule
+} from "@angular/material";
 import { ParallaxPanelModule } from "../parallax-panel/parallax-panel.module";
+import { TimeLineCardComponent } from "./general/time-line-card.component";
 import { TimeLinePeriodComponent } from "./general/time-line-period.component";
 import { TimeLineSectionComponent } from "./general/time-line-section.component";
-import { GrantaComponent } from "./granta/granta.component";
 import { TimeLineComponent } from "./time-line.component";
 
-const timelineComponents = [
-  GrantaComponent,
-];
 
 @NgModule({
   imports: [
+    CommonModule,
+
     MatDividerModule,
     MatListModule,
     MatExpansionModule,
     MatIconModule,
     MatButtonModule,
-    CommonModule,
-    ParallaxPanelModule,
     MatChipsModule,
+    MatCardModule,
+
+    ParallaxPanelModule,
+    MatTabsModule,
   ],
   exports: [TimeLineComponent],
   declarations: [
     TimeLineSectionComponent,
     TimeLinePeriodComponent,
+    TimeLineCardComponent,
     TimeLineComponent,
-
-    timelineComponents
   ],
-  entryComponents: [timelineComponents],
 })
 export class TimeLineModule {}

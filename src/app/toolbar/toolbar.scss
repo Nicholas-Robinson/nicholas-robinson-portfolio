@@ -29,6 +29,17 @@ $border-style: 4px solid;
       justify-content: flex-end;
     }
   }
+
+  mat-expansion-panel {
+    border-radius: 0;
+    padding-left: 150px;
+  }
+
+  #link-tray {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 
 .profile-picture {

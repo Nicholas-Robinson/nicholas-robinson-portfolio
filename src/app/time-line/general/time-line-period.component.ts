@@ -12,6 +12,7 @@ import { Component, Input } from "@angular/core";
 
       #period-content {
           margin-left: 200px;
+          display: flex;
       }
 
       mat-chip-list {

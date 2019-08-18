@@ -1,7 +1,15 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { ToolbarComponent } from "./toolbar.component";
-import { MatButtonModule, MatIconModule, MatListModule, MatTabsModule, MatToolbarModule } from "@angular/material";
+import {
+  MatButtonModule,
+  MatChipsModule,
+  MatExpansionModule,
+  MatIconModule,
+  MatListModule,
+  MatTabsModule,
+  MatToolbarModule
+} from "@angular/material";
 
 @NgModule({
   declarations: [
@@ -16,7 +24,9 @@ import { MatButtonModule, MatIconModule, MatListModule, MatTabsModule, MatToolba
     MatListModule,
     MatButtonModule,
     MatTabsModule,
-    CommonModule
+    CommonModule,
+    MatExpansionModule,
+    MatChipsModule
   ]
 })
 export class ToolbarModule {}

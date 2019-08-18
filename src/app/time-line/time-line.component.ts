@@ -27,8 +27,8 @@ import { ITimelineSectionConfig } from "./i-time-line-config";
                                     [logoUrl]="period.logo"
                                     [logoEndpoint]="period.endpoint">
 
-                  <ng-container *ngFor="let component of period.components">
-                      <ng-container *ngComponentOutlet="component"></ng-container>
+                  <ng-container *ngFor="let card of period.cards">
+                      <ntr-time-line-card [card]="card"></ntr-time-line-card>
                   </ng-container>
 
               </ntr-time-line-period>
