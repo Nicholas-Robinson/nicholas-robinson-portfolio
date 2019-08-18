@@ -10,8 +10,12 @@ import { Component, Input } from "@angular/core";
           align-items: center;
       }
 
+      #period-content {
+          margin-left: 200px;
+      }
+
       mat-chip-list {
-          margin-right: 12px;
+          width: 150px;
       }
 
       mat-chip {
@@ -37,7 +41,9 @@ import { Component, Input } from "@angular/core";
           </ng-template>
 
       </div>
-      <ng-content></ng-content>
+      <div id="period-content">
+          <ng-content></ng-content>
+      </div>
   `,
 })
 export class TimeLinePeriodComponent {
