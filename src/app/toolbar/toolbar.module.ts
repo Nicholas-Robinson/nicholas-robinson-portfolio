@@ -1,3 +1,4 @@
+import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { ToolbarComponent } from "./toolbar.component";
 import { MatButtonModule, MatIconModule, MatListModule, MatTabsModule, MatToolbarModule } from "@angular/material";
@@ -14,7 +15,8 @@ import { MatButtonModule, MatIconModule, MatListModule, MatTabsModule, MatToolba
     MatIconModule,
     MatListModule,
     MatButtonModule,
-    MatTabsModule
+    MatTabsModule,
+    CommonModule
   ]
 })
 export class ToolbarModule {}

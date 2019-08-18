@@ -6,6 +6,7 @@ import { Component, HostBinding, Input } from "@angular/core";
       :host {
           display: flex;
           flex: 1 1 0px;
+          flex-direction: column;
 
           background-attachment: fixed;
           background-position: center;

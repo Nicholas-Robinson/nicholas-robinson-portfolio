@@ -1,6 +1,7 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { MatButtonModule, MatChipsModule, MatDividerModule, MatExpansionModule, MatIconModule, MatListModule } from "@angular/material";
+import { RouterModule } from "@angular/router";
 import { ParallaxPanelModule } from "../parallax-panel/parallax-panel.module";
 import { TimeLinePeriodComponent } from "./general/time-line-period.component";
 import { TimeLineSectionComponent } from "./general/time-line-section.component";
@@ -20,7 +21,7 @@ const timelineComponents = [
     MatButtonModule,
     CommonModule,
     ParallaxPanelModule,
-    MatChipsModule
+    MatChipsModule,
   ],
   exports: [TimeLineComponent],
   declarations: [

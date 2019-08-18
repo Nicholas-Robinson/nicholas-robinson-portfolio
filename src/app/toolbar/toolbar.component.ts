@@ -1,4 +1,5 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
+import { IToolbarConfig } from "./i-toolbar-config";
 
 @Component({
   selector: "ntr-toolbar",
@@ -21,13 +22,23 @@ import { Component } from "@angular/core";
               </mat-toolbar>
 
               <mat-toolbar class="nav" color="primary">
-                  <a href="#something0" mat-button>Teesing</a>
-                  <a href="#something1" mat-button>Teesing</a>
-                  <a href="#something2" mat-button>Teesing</a>
-                  <a href="#something3" mat-button>Teesing</a>
+                  <a *ngFor="let link of config"
+                     [href]="getHrefLink(link)"
+                     mat-button>
+                      {{ link.sectionLabel }}
+                  </a>
               </mat-toolbar>
           </div>
       </div>
   `,
 })
-export class ToolbarComponent {}
+export class ToolbarComponent {
+
+  @Input()
+  public config: IToolbarConfig[];
+
+  public getHrefLink(config: IToolbarConfig): string {
+    return `#${config.sectionIdentifier}`;
+  }
+
+}
