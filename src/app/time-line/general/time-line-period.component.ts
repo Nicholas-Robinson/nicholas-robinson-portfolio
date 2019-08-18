@@ -6,13 +6,14 @@ import { Component, Input } from "@angular/core";
       #period-header {
           display: flex;
           flex: 1 1 0;
-          padding: 24px;
+          padding: 24px 30px;
           align-items: center;
       }
 
       #period-content {
           margin-left: 165px;
           display: flex;
+          flex-wrap: wrap;
       }
 
       mat-chip-list {

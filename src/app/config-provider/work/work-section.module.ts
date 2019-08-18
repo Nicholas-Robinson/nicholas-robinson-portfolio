@@ -1,4 +1,4 @@
-import { NgModule, Type } from "@angular/core";
+import { InjectionToken, NgModule, Type } from "@angular/core";
 import {
   createProvider,
   IPeriodConfigProvider, SectionConfigProvider,
@@ -13,15 +13,23 @@ const workPeriodProviders: Type<IPeriodConfigProvider>[] = [
   GrantaSectionConfigService,
 ];
 
-const toPeriodProvider = createProvider.bind(undefined, TIME_LINE_PERIOD_PROVIDER_TOKEN);
+const periodProviders = new InjectionToken("");
+const toPeriodProvider = createProvider.bind(undefined, periodProviders);
 
 @NgModule({
   providers: [
     workPeriodProviders.map(toPeriodProvider),
-    { provide: TIME_LINE_SECTION_IDENTIFIER_TOKEN, useValue: "Work" },
-    { provide: TIME_LINE_SECTION_TITLE_TOKEN, useValue: "Work" },
-    { provide: TIME_LINE_SECTION_IMAGE_TOKEN, useValue: "https://cataas.com/cat" },
-    { provide: TIME_LINE_SECTION_PROVIDER_TOKEN, useClass: SectionConfigProvider, multi: true },
+    {
+      provide: TIME_LINE_SECTION_PROVIDER_TOKEN,
+      useFactory: items => new SectionConfigProvider(
+        "Work",
+        "Work",
+        "https://lh3.googleusercontent.com/tvcsRR85MUZqhQlck3ua1xl2PR25w_CuBTt6Pa2eOk4FnMw68s-3jyBeRGQ=w2400",
+        items,
+      ),
+      deps: [periodProviders],
+      multi: true,
+    },
   ]
 })
 export class WorkSectionModule {}

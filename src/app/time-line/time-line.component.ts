@@ -1,5 +1,4 @@
-import { Component, Input, Type } from "@angular/core";
-import { GrantaComponent } from "./granta/granta.component";
+import { Component, Input } from "@angular/core";
 import { ITimelineSectionConfig } from "./i-time-line-config";
 
 @Component({

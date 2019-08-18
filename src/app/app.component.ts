@@ -26,7 +26,8 @@ export class AppComponent {
   @HostBinding("class")
   public activeTheme: "dark-theme" | "light-theme" = "dark-theme";
 
-  public readonly aboutMeBackgroundImage = "https://media.licdn.com/dms/image/C4D16AQEcUtcssV9Tfg/profile-displaybackgroundimage-shrink_350_1400/0?e=1571270400&v=beta&t=kv0laKMOJnXYMP7YnhJWJZZzhrl8FS2ifGyMZZxchF8";
+  public readonly aboutMeBackgroundImage = "https://lh5.googleusercontent.com/fLIgqIaylOZZBKjwsxjeC4lAPSpJ1cQR5SAYaiZNKJZsbpHgO-UPi-Nu3R0=w2400";
+  // public readonly aboutMeBackgroundImage = "https://media.licdn.com/dms/image/C4D16AQEcUtcssV9Tfg/profile-displaybackgroundimage-shrink_350_1400/0?e=1571270400&v=beta&t=kv0laKMOJnXYMP7YnhJWJZZzhrl8FS2ifGyMZZxchF8";
 
   public config: ITimelineSectionConfig[] = this.configProvider.buildTimelineConfig();
 

@@ -23,10 +23,10 @@ export interface ISectionConfigProvider {
 export class SectionConfigProvider implements ISectionConfigProvider {
 
   constructor(
-    @Inject(TIME_LINE_SECTION_IDENTIFIER_TOKEN) private readonly identifier: string,
-    @Inject(TIME_LINE_SECTION_TITLE_TOKEN) private readonly title: string,
-    @Inject(TIME_LINE_SECTION_IMAGE_TOKEN) private readonly backgroundImage: string,
-    @Inject(TIME_LINE_PERIOD_PROVIDER_TOKEN) private readonly periodProvider: IPeriodConfigProvider[],
+    private readonly identifier: string,
+    private readonly title: string,
+    private readonly backgroundImage: string,
+    private readonly periodProvider: IPeriodConfigProvider[],
   ) {}
 
   getSectionConfig(): ITimelineSectionConfig {
