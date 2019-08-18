@@ -9,10 +9,12 @@ import {
 } from "../config-provider";
 import { EntelectSectionConfigService } from "./entelect-section-config.service";
 import { GrantaSectionConfigService } from "./granta-section-config.service";
+import { PsybergateSectionConfigService } from "./psybergate-section-config.service";
 
 const workPeriodProviders: Type<IPeriodConfigProvider>[] = [
   GrantaSectionConfigService,
   EntelectSectionConfigService,
+  PsybergateSectionConfigService,
 ];
 
 const periodProviders = new InjectionToken("");
