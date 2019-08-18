@@ -7,10 +7,12 @@ import {
   TIME_LINE_SECTION_IMAGE_TOKEN, TIME_LINE_SECTION_PROVIDER_TOKEN,
   TIME_LINE_SECTION_TITLE_TOKEN
 } from "../config-provider";
+import { EntelectSectionConfigService } from "./entelect-section-config.service";
 import { GrantaSectionConfigService } from "./granta-section-config.service";
 
 const workPeriodProviders: Type<IPeriodConfigProvider>[] = [
   GrantaSectionConfigService,
+  EntelectSectionConfigService,
 ];
 
 const periodProviders = new InjectionToken("");
