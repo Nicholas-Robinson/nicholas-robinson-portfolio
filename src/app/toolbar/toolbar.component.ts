@@ -30,7 +30,7 @@ export interface ISocialLink {
                       <a href="https://drive.google.com/open?id=1DOYL4EmMZ8qW_0ZumQZArmAVhHdcgtZO"
                          target="_blank"
                          mat-menu-item>
-                          CV
+                          Curriculum vitae
                       </a>
                       <a href="https://drive.google.com/open?id=1hSXcqpMtLIkEs9KTnLZ21ebj2BSGhGtW"
                          target="_blank"

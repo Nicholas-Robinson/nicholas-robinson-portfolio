@@ -11,3 +11,8 @@ html, body {
   justify-content: center;
   display: flex;
 }
+
+#contact > a .mat-button-wrapper {
+  display: flex;
+  flex-direction: row;
+}

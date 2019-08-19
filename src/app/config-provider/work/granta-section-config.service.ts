@@ -8,7 +8,7 @@ export class GrantaSectionConfigService implements IPeriodConfigProvider {
   public getPeriodConfig(): ITimelinePeriodConfig {
     return {
       period: "2016 - present",
-      logo: "https://lh6.googleusercontent.com/akemJnuhJS1RnODRxP4B327Lbw0SOLb3LgImj19meqSuPVuNo1ktSpDYT4U=w2400",
+      logo: "https://i.imgur.com/JcV5HIg.png",
       endpoint: "http://grantadesign.com",
       cards: [
         this.buildGrantaCard(),
@@ -23,19 +23,20 @@ export class GrantaSectionConfigService implements IPeriodConfigProvider {
     return {
       title: "GRANTA Design Ltd.",
       subTitle: "UI Engineer",
-      body: "For the last 3 years I have worked at Granta Design as a UI Engineer, updating and maintaining an Angular based web-platform that is used to create various applications for engineers",
+      body: "For the last 3 years I have worked at Granta Design as a UI Engineer, " +
+        "updating and maintaining the Angular based web-platform that is used to create various engineering applications.",
       media: [
         {
           type: "image",
-          src: "https://lh5.googleusercontent.com/iX6SXWiGy4Vn9Tt9x9A-RctzlxEaFvhAlu72guqsBxiBW7J3W2akgpAimuc=w2400",
+          src: "https://i.imgur.com/i1EydO3.jpg",
           alt: "Material wall image",
           name: "Materials wall"
         },
         {
           type: "image",
-          src: "https://lh3.googleusercontent.com/iRsibVEphg-XoYzvGw0TkPnAlCGQnE1OFHLTEZ_ufuoy1BYvMx71YGIgQZw=w2400",
+          src: "https://i.imgur.com/ieZapKE.png",
           alt: "Building image",
-          name: "Building"
+          name: "GRANTA Design"
         },
       ],
       links: [
@@ -50,22 +51,23 @@ export class GrantaSectionConfigService implements IPeriodConfigProvider {
   private buildGatewayCard(): ITimelineCard {
     return {
       title: "GRANTA Material Gateway v6.0",
-      subTitle: "Full UI re-design of Granta's Material Gateway for NX",
-      body: "I evolved the UI and improved the UX for version 6 of Granta's materials gateway and helped define the UI standards for the vision of all Grata products going forward.",
+      subTitle: "Full UI/UX re-design of the GRANTA Material Gateway for NX",
+      body: "I evolved the UI and improved the UX for version 6.0 of Granta's Material Gateway and helped define the standards " +
+        "for the UI vision of all Grata products going forward.",
       media: [
         {
           type: "image",
-          src: "https://lh3.googleusercontent.com/Urf-cY_wcBSgSQ35nSaQxDiFMAkeZdxXDxRnrOH_nLCqUzrytp8cDUtkMOQ=w2400",
+          src: "https://i.imgur.com/GfgMODJ.png",
           alt: "Final design image",
-          name: "Final product"
+          name: "Gateway v6.0"
         },
         {
           type: "image",
-          src: "https://lh5.googleusercontent.com/e8yn5dKd6bJw0n6v3YNDLhYOEoLxY2Mzigp3QpnYpfaCJMZJ_OMqfRsU7Nw=w2400",
+          src: "https://i.imgur.com/demfGQV.jpg",
           alt: "Side by side image",
-          name: "Side by Side"
+          name: "Comparison"
         },
-        { type: "video", src: "https://www.youtube.com/embed/aGCFkjCt_48", alt: "In action tutorial", name: "In action" },
+        { type: "video", src: "https://www.youtube.com/embed/aGCFkjCt_48", alt: "In action tutorial", name: "Introduction" },
       ],
       links: [
         {
@@ -83,26 +85,29 @@ export class GrantaSectionConfigService implements IPeriodConfigProvider {
   private buildExploreCard(): ITimelineCard {
     return {
       title: "GRANTA Web-Platform",
-      subTitle: "An Angular web-platform used to build multiple applications",
-      body: "I helped to maintain and improve the Granta Angular web-platform. Notable contributions I have made include: The functional data plotting feature, the latest version of the Mi:Bom Analyzer application and upgrading the platform from Angular 1 to the latest Angular release.",
+      subTitle: "An Angular based web-platform used to build engineering applications",
+      body: "I helped to maintain and improve the Granta Angular based web-platform. " +
+        "Some notable contributions I have made include: The functional data plotting feature in Mi:Explore, " +
+        "updates for the latest version of the Mi:Bom Analyzer " +
+        " and upgrading the platform from Angular 1.3 to the latest Angular release.",
       media: [
         {
           type: "image",
-          src: "https://lh6.googleusercontent.com/GsltLNXfliZPs5sJ66kthF2XW2_Fjgyxqh0d4psk9n3zX-ZzTW_S1S_qNew=w2400",
+          src: "https://i.imgur.com/cldDqG3.jpg",
           alt: "Explore functional graph image",
           name: "Graphing"
         },
         {
           type: "image",
-          src: "https://lh6.googleusercontent.com/aYmQs-cP-CWYUgwp8TvVncGcPx4rZxgLRaNOquLqSGWLZbqkuI8OQniUP7U=w2400",
+          src: "https://i.imgur.com/9dSsq9A.png",
           alt: "MI:Explore image",
           name: "MI:Explore"
         },
         {
           type: "image",
-          src: "https://lh4.googleusercontent.com/ORazA9T-ctIuBvILs_fLAcPO5X99akxXZDRx8hX7f1VQsDAfp8P50mSlyjs=w2400",
+          src: "https://i.imgur.com/5uZX2R9.jpg",
           alt: "Data-sheets image",
-          name: "Data-sheets"
+          name: "Data Sheets"
         },
       ],
       links: [
@@ -122,8 +127,7 @@ export class GrantaSectionConfigService implements IPeriodConfigProvider {
       media: [
         {
           type: "image",
-          src: "https://lh4.googleusercontent.com/y-3u_PHa4KXFiOOJn3_SNSKKIMeAfSwbTmRuvqKDtjPzdDG1wRIJaBlxu7c=w2400",
-          // src: "https://lh6.googleusercontent.com/QMH3gGYaprWratovg3saXiv_mKKIvU-jRxZ7DnXyS6Zl_Fmpq6PI5aAR8EY=w2400",
+          src: "https://i.imgur.com/cjhnPse.png",
           alt: "NNg image",
           name: "NNg UX Conference"
         },

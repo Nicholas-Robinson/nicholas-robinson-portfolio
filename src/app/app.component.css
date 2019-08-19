@@ -37,7 +37,7 @@ mat-progress-bar {
 
 #about {
   margin: 24px;
-  padding: 12px;
+  padding: 24px;
   letter-spacing: 2px;
   line-height: 1.2;
   text-align: center;
@@ -46,16 +46,24 @@ mat-progress-bar {
 }
 
 #contact {
-  height: 200px;
   background: #eeeeee;
   color: rgba(0, 0, 0, 0.87);
+  padding: 24px 24px 24px 46px;
 }
 
-#contact > div {
+#contact > a {
   display: flex;
-  padding: 24px 24px 24px 46px;
+  margin-bottom: 6px;
+  padding: 0;
 }
 
 #contact mat-chip-list {
   width: 32px;
+  margin-right: 12px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#contact mat-chip {
+  cursor: pointer;
 }

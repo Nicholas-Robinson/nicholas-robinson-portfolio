@@ -21,11 +21,12 @@ export class GoogleService implements IPeriodConfigProvider {
     return {
       title: "Convenience Chrome extension",
       subTitle: "A Google Chrome extension to automate booking a film",
-      body: "Created a Google Chrome extention that automated the process of booking a film ticket though the light cinema website. The objective of this project was to learn how about Google Chrome extensions and simplify the booking experience.",
+      body: "The objective of this project was to learn how about the Google Chrome extension API and simplify the booking experience. " +
+        "The extension automates the booking process for a film ticket though the light cinema website.",
       media: [
         {
           type: "image",
-          src: "https://www.cataas.com/cat",
+          src: "https://i.imgur.com/PbsQmtj.png",
           alt: "Extension image",
           name: "Extension",
         },
@@ -37,8 +38,9 @@ export class GoogleService implements IPeriodConfigProvider {
   private buildAssistantLight(): ITimelineCard {
     return {
       title: "Google Assistant integrated LEDs",
-      subTitle: "Using Arduino to control LED strip with Google Assistant",
-      body: "I used an Arduino nano and the Google Assistant API to control an LED strip. This was a personal project to explore the Assistant API and attempt to create a smart light.",
+      subTitle: "Using Arduino to control LED strip with Google Assistant API",
+      body: "I used an Arduino nano and the Google Assistant API to control an LED strip. " +
+        "This was a personal project to explore the Assistant API and attempt to create a smart light.",
       media: [
         {
           type: "video",
@@ -50,13 +52,13 @@ export class GoogleService implements IPeriodConfigProvider {
           type: "video",
           src: "https://www.youtube.com/embed/WLqYEvxGe_M",
           alt: "",
-          name: "Lights!",
+          name: "Light!",
         },
         {
           type: "video",
           src: "https://www.youtube.com/embed/3a3fE9pw-lw",
           alt: "",
-          name: "Tutorial",
+          name: "LED - 101",
         },
       ],
       links: [],

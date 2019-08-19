@@ -8,7 +8,7 @@ export class PsybergateSectionConfigService implements IPeriodConfigProvider {
   public getPeriodConfig(): ITimelinePeriodConfig {
     return {
       period: "2014 - 2015",
-      logo: "https://lh4.googleusercontent.com/tppeCrgL3ee-q7NdUvcjA5PEcJLDh-OrCxO_ADMI-TTwmwLL5-mGsmi90LA=w2400",
+      logo: "https://i.imgur.com/UTyFVPZ.jpg",
       endpoint: "http://www.psybergate.com/",
       cards: [
         this.buildPsybergateCard(),
@@ -20,11 +20,12 @@ export class PsybergateSectionConfigService implements IPeriodConfigProvider {
     return {
       title: "Psybergate",
       subTitle: "Graduate Java Engineer",
-      body: "I took part in a 6 month graduate program at Psybergate that covered the Java programming language. The pragramme covered everything from the Java object model to JEE and Enterprise server applications.",
+      body: "I took part in the 6 month Psybergate graduate program, that covered the Java programming language. " +
+        "During this programme we covered everything from the Java object model to JEE and Enterprise server applications.",
       media: [
         {
           type: "image",
-          src: "https://lh4.googleusercontent.com/8y7d158rexigf83A3L0uqXQtTzD2Ud7Eae_ZFXPlVXZO_m-plBBWefVOGKU=w2400",
+          src: "https://i.imgur.com/plJzNHc.jpg",
           alt: "Graduate programme image",
           name: "Graduate programme"
         },

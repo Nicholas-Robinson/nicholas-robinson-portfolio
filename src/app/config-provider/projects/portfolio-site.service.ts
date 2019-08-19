@@ -11,20 +11,22 @@ export class PortfolioSiteService implements IPeriodConfigProvider {
       logo: "",
       endpoint: "",
       cards: [
-        this.buildChromeExtension(),
+        this.buildProtfolioCard(),
       ]
     };
   }
 
-  private buildChromeExtension(): ITimelineCard {
+  private buildProtfolioCard(): ITimelineCard {
     return {
-      title: "This website",
-      subTitle: "Angular single page application with Material components",
-      body: "I used this portfolio as an excuse to grow and learn. In stead of creating a template-website I decided to take a deep dive into the Angular Material component library and build this website over a weekend.",
+      title: "This Website",
+      subTitle: "An Angular single-page-application with material components",
+      body: "I used this portfolio as an opportunity to learn and sharpen my skills. " +
+        "In stead of creating a template-website I decided to take a " +
+        "deep dive into the Angular Material component library and build this portfolio over a weekend.",
       media: [
         {
           type: "image",
-          src: "https://lh4.googleusercontent.com/w8K3nMRhtCfGr41y0uigWBm1k4-3PzFPiC_-TofA7I1OTD8nNBhIuHrWeWY=w2400",
+          src: "https://i.imgur.com/tto7852.png",
           alt: "Portfolio inception",
           name: "Portfolio",
         },

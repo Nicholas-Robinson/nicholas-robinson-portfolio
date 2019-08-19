@@ -8,7 +8,7 @@ export class EntelectSectionConfigService implements IPeriodConfigProvider {
   public getPeriodConfig(): ITimelinePeriodConfig {
     return {
       period: "2015 - 2016",
-      logo: "https://lh6.googleusercontent.com/uajsihLsBrJAStgQgRt8XSZ1OL-S_YuaknYbHNSxq8Q09JnKtQ3aJrtdn6k=w2400",
+      logo: "https://i.imgur.com/Ci4DzSK.jpg",
       endpoint: "https://www.entelect.co.za/",
       cards: [
         this.buildEntelectCard(),
@@ -20,11 +20,12 @@ export class EntelectSectionConfigService implements IPeriodConfigProvider {
     return {
       title: "Entelect",
       subTitle: "Junior UI Engineer",
-      body: "I spent a year as a Junior UI Engineer working on and AngularJS application to guide users through investment information and advice for FNB (a bank in South Africa).",
+      body: "As a Junior UI Engineer I was tasked with an AngularJS application to guide users through investment " +
+        "information and advice for First National Bank (FNB).",
       media: [
         {
           type: "image",
-          src: "https://lh5.googleusercontent.com/aYWwy0aYVD9T7Wg6NNBo3MXo6YHA-uSNrgp3TDoclo_DX0FEmnuKX6gCFPw=w2400",
+          src: "https://i.imgur.com/5eJ68mQ.jpg",
           alt: "FNB Entelect image",
           name: "FNB and Entelect"
         },

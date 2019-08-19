@@ -18,7 +18,7 @@ const toPeriodProvider = createProvider.bind(undefined, periodProviders);
       useFactory: items => new SectionConfigProvider(
         "Education",
         "Education",
-        "https://lh4.googleusercontent.com/Ser2As4v47WtyG9xiFUWi7f5vCjNnX2m3VAARoK1Ry9-w3oLMtsNDjuYl-c=w2400",
+        "https://i.imgur.com/HWjCPs7.jpg",
         items,
       ),
       deps: [periodProviders],

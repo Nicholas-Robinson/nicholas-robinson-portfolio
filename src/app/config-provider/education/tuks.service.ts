@@ -8,7 +8,7 @@ export class TuksService implements IPeriodConfigProvider {
   public getPeriodConfig(): ITimelinePeriodConfig {
     return {
       period: "2012 - 2015",
-      logo: "https://lh5.googleusercontent.com/mGAM7qBvtq0M0DX3XJ8FIjHbqh6hGlLO1VwtuFDYyo7oOFwwu4ISmKDxosY=w2400",
+      logo: "https://i.imgur.com/qCIBaTw.png",
       endpoint: "https://www.up.ac.za/",
       cards: [
         this.buildDataMinderCard(),
@@ -20,11 +20,12 @@ export class TuksService implements IPeriodConfigProvider {
     return {
       title: "University of Pretoria",
       subTitle: "BSc Information Technologies",
-      body: "Equivalent to a Computer Science degree, the degree covered subjects like data-structures and algorithms, UI and UX design and testing, concurrent programming and programming languages (to name a few)",
+      body: "Equivalent to a Computer Science degree, my degree covered subjects like data-structures and algorithms, " +
+        "concurrent programming, UI/UX design and testing and programming languages; to list a few.",
       media: [
         {
           type: "image",
-          src: "https://lh6.googleusercontent.com/gmqEqVZ8znf8iQxOzDH3q7pJdAWt4P4_ME3Z3h-fHHuWRoFsPCI1rqNH0e0=w2400",
+          src: "https://i.imgur.com/Z0vIenh.jpg",
           alt: "University of pretoria image",
           name: "University of Pretoria",
         },
