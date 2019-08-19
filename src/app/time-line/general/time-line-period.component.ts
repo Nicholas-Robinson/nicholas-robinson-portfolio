@@ -24,6 +24,18 @@ import { Component, Input } from "@angular/core";
       mat-chip {
           border: 4px solid black;
       }
+
+      @media only screen and (max-width: 800px) {
+          #period-content {
+              margin-left: 100px;
+          }
+      }
+
+      @media only screen and (max-width: 600px) {
+          #period-content {
+              margin-left: 80px;
+          }
+      }
   `],
   template: `
       <div id="period-header">
