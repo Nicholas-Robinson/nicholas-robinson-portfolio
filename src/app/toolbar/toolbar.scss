@@ -6,6 +6,7 @@ $profile-picture-size: 150px;
 $profile-picture-offset: 18px;
 $border-style: 4px solid;
 
+
 .toolbar-layout {
   position: relative;
   flex-direction: row;
@@ -20,6 +21,24 @@ $border-style: 4px solid;
 
   #name {
     flex: 1 1 0px;
+
+    > span {
+      opacity: 1;
+      display: inline-block;
+      transition: opacity 200ms ease-out 200ms, width 200ms ease-in;
+
+      &:first-child {
+        width: 65px;
+      }
+
+      &:last-child {
+        width: 70px;
+      }
+    }
+  }
+
+  [mat-button] {
+    transition: padding 200ms ease-out;
   }
 
   mat-toolbar {
@@ -40,23 +59,48 @@ $border-style: 4px solid;
     align-items: center;
     justify-content: flex-end;
   }
+
+  .social-link {
+    font-size: 1.5rem;
+  }
+
 }
 
-.social-link {
-  font-size: 1.5rem;
-}
 
 .profile-picture {
+  transition: height ease-out 200ms, width ease-out 200ms;
   background-image: url($profile-picture);
   background-size: cover;
 
   width: $profile-picture-size;
   height: $profile-picture-size;
 
-  z-index: 10;
+  z-index: 10;;
   position: absolute;
   left: -$profile-picture-offset;
 
   border-radius: 1000px;
   border: $border-style
+}
+
+
+@media only screen and (max-width: 600px) {
+  $profile-picture-size: 135px;
+
+  .profile-picture {
+    width: $profile-picture-size;
+    height: $profile-picture-size;
+  }
+
+  .toolbars {
+
+    #name > span {
+      &:first-child, &:last-child {
+        width: 0;
+      }
+
+      opacity: 0;
+      transition: opacity ease-in 200ms, width ease-out 200ms 200ms;
+    }
+  }
 }
