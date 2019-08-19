@@ -11,6 +11,17 @@ import { IToolbarConfig } from "./toolbar/i-toolbar-config";
 
       <ntr-parallax-panel [height]="350"
                           [backgroundImageUrl]="aboutMeBackgroundImage">
+          <div class="profile-container">
+              <div>
+                  <div class="language-skill" *ngFor="let skill of languageSkills">
+                      <mat-chip-list>
+                          <mat-chip color="primary" selected>{{ skill.name }}</mat-chip>
+                      </mat-chip-list>
+                      <mat-progress-bar color="warn" mode="determinate" [value]="skill.value"></mat-progress-bar>
+                  </div>
+              </div>
+              <div>dsa</div>
+          </div>
       </ntr-parallax-panel>
 
       <ntr-time-line [config]="config"></ntr-time-line>
@@ -26,10 +37,20 @@ export class AppComponent {
   @HostBinding("class")
   public activeTheme: "dark-theme" | "light-theme" = "dark-theme";
 
-  public readonly aboutMeBackgroundImage = "https://lh5.googleusercontent.com/fLIgqIaylOZZBKjwsxjeC4lAPSpJ1cQR5SAYaiZNKJZsbpHgO-UPi-Nu3R0=w2400";
-  // public readonly aboutMeBackgroundImage = "https://media.licdn.com/dms/image/C4D16AQEcUtcssV9Tfg/profile-displaybackgroundimage-shrink_350_1400/0?e=1571270400&v=beta&t=kv0laKMOJnXYMP7YnhJWJZZzhrl8FS2ifGyMZZxchF8";
+  // public readonly aboutMeBackgroundImage = "https://lh5.googleusercontent.com/fLIgqIaylOZZBKjwsxjeC4lAPSpJ1cQR5SAYaiZNKJZsbpHgO-UPi-Nu3R0=w2400";
+  public readonly aboutMeBackgroundImage = "https://media.licdn.com/dms/image/C4D16AQEcUtcssV9Tfg/profile-displaybackgroundimage-shrink_350_1400/0?e=1571270400&v=beta&t=kv0laKMOJnXYMP7YnhJWJZZzhrl8FS2ifGyMZZxchF8";
 
   public config: ITimelineSectionConfig[] = this.configProvider.buildTimelineConfig();
+
+  public languageSkills: { name: string; value: number }[] = [
+    { name: "TypeScript", value: 95 },
+    { name: "Angular", value: 80 },
+    { name: "HTML", value: 85 },
+    { name: "CSS", value: 75 },
+    { name: "JavaScript", value: 90 },
+    { name: "Java", value: 55 },
+    { name: "Go", value: 20 },
+  ];
 
   // public config: ITimelineSectionConfig[] = [
   //   {

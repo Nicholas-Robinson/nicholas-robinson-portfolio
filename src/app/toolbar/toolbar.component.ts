@@ -21,22 +21,13 @@ import { IToolbarConfig } from "./i-toolbar-config";
                   </button>
               </mat-toolbar>
 
-              <mat-expansion-panel [expanded]="showContent" (mouseleave)="showContent = false" hideToggle>
-                  <mat-expansion-panel-header (click)="showContent = !showContent">
-                      <mat-panel-title>
-
-                      </mat-panel-title>
-                      <mat-icon>menu</mat-icon>
-                  </mat-expansion-panel-header>
-
-                  <div id="link-tray">
-                      <a *ngFor="let link of config"
-                         [href]="getHrefLink(link)"
-                         mat-button>
-                          {{ link.sectionLabel }}
-                      </a>
-                  </div>
-              </mat-expansion-panel>
+              <mat-toolbar class="nav" color="primary">
+                  <a *ngFor="let link of config"
+                     [href]="getHrefLink(link)"
+                     mat-button>
+                      {{ link.sectionLabel }}
+                  </a>
+              </mat-toolbar>
           </div>
       </div>
   `,

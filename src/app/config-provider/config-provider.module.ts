@@ -7,8 +7,8 @@ import { WorkSectionModule } from "./work/work-section.module";
 @NgModule({
   imports: [
     WorkSectionModule,
-    ProjectsSectionModule,
     EducationSectionModule,
+    ProjectsSectionModule,
   ],
   providers: [ConfigProviderService],
 })
