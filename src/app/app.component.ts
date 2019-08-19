@@ -10,8 +10,7 @@ import { ISocialLink } from "./toolbar/toolbar.component";
   template: `
       <ntr-toolbar [config]="toolbarConfig" [socialLinks]="socialLinks"></ntr-toolbar>
 
-      <ntr-parallax-panel [height]="350"
-                          [backgroundImageUrl]="aboutMeBackgroundImage">
+      <ntr-parallax-panel [backgroundImageUrl]="aboutMeBackgroundImage">
           <div class="profile-container">
               <div>
                   <div class="language-skill" *ngFor="let skill of languageSkills">
@@ -74,7 +73,7 @@ export class AppComponent {
 
   public contactInfo: { icon: string, value: string, link: string }[] = [
     { icon: "fas fa-envelope", value: "ntrpilot@gmail.com", link: "mailto:ntrpilot@gmail.com" },
-    { icon: "fas fa-phone", value: "+44 (0) 7592166802", link: "tel:07925166802" },
+    { icon: "fas fa-phone", value: "(+44) 07925 166802", link: "tel:+447925166802" },
     { icon: "fas fa-file-invoice", value: "Curriculum vitae", link: "https://drive.google.com/open?id=1DOYL4EmMZ8qW_0ZumQZArmAVhHdcgtZO" },
     { icon: "fas fa-file-alt", value: "Resume", link: "https://drive.google.com/open?id=1hSXcqpMtLIkEs9KTnLZ21ebj2BSGhGtW" },
   ];

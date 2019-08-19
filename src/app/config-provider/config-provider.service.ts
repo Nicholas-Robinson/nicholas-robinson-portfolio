@@ -1,5 +1,5 @@
-import { Inject, Injectable, InjectionToken } from "@angular/core";
-import { ITimelinePeriodConfig, ITimelineSectionConfig } from "../time-line/i-time-line-config";
+import { Inject, Injectable } from "@angular/core";
+import { ITimelineSectionConfig } from "../time-line/i-time-line-config";
 import { ISectionConfigProvider, TIME_LINE_SECTION_PROVIDER_TOKEN } from "./config-provider";
 
 @Injectable()
