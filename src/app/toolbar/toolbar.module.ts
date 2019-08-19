@@ -6,7 +6,7 @@ import {
   MatChipsModule,
   MatExpansionModule,
   MatIconModule,
-  MatListModule,
+  MatListModule, MatMenuModule,
   MatTabsModule,
   MatToolbarModule
 } from "@angular/material";
@@ -26,7 +26,8 @@ import {
     MatTabsModule,
     CommonModule,
     MatExpansionModule,
-    MatChipsModule
+    MatChipsModule,
+    MatMenuModule
   ]
 })
 export class ToolbarModule {}

@@ -1,5 +1,4 @@
 .contents {
-  /*padding-top: 120px;*/
   flex: 1 1 0;
 }
 
@@ -34,4 +33,29 @@ mat-chip {
 mat-progress-bar {
   border: 2px solid black;
   margin-left: -4px;
+}
+
+#about {
+  margin: 24px;
+  padding: 12px;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  text-align: center;
+  background: rgba(96, 125, 139, 0.9);
+  color: white;
+}
+
+#contact {
+  height: 200px;
+  background: #eeeeee;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+#contact > div {
+  display: flex;
+  padding: 24px 24px 24px 46px;
+}
+
+#contact mat-chip-list {
+  width: 32px;
 }
