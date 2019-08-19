@@ -14,6 +14,7 @@ export class GrantaSectionConfigService implements IPeriodConfigProvider {
         this.buildGrantaCard(),
         this.buildGatewayCard(),
         this.buildExploreCard(),
+        this.buildNngCard(),
       ]
     };
   }
@@ -108,6 +109,33 @@ export class GrantaSectionConfigService implements IPeriodConfigProvider {
         {
           text: "GRANTA Mi product page",
           url: "https://grantadesign.com/industry/products/granta-mi/"
+        },
+      ],
+    };
+  }
+
+  private buildNngCard(): ITimelineCard {
+    return {
+      title: "Nielsen Norman Group",
+      subTitle: "Attended the NNg UX Conference",
+      body: "Granta presented me with the opportunity to improve my UX skills though the Nielsen Norman Group UX Conference.",
+      media: [
+        {
+          type: "image",
+          src: "https://lh4.googleusercontent.com/y-3u_PHa4KXFiOOJn3_SNSKKIMeAfSwbTmRuvqKDtjPzdDG1wRIJaBlxu7c=w2400",
+          // src: "https://lh6.googleusercontent.com/QMH3gGYaprWratovg3saXiv_mKKIvU-jRxZ7DnXyS6Zl_Fmpq6PI5aAR8EY=w2400",
+          alt: "NNg image",
+          name: "NNg UX Conference"
+        },
+      ],
+      links: [
+        {
+          text: "NNg",
+          url: "https://www.nngroup.com/"
+        },
+        {
+          text: "UX Conference",
+          url: "https://www.nngroup.com/ux-conference/"
         },
       ],
     };

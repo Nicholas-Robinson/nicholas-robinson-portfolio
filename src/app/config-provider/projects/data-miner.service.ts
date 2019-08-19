@@ -24,7 +24,19 @@ export class DataMinerService implements IPeriodConfigProvider {
       media: [
         {
           type: "image",
-          src: "https://lh5.googleusercontent.com/hdxRN8H6FDVRoManISsCDmDsAVWPg1yNLVfenQ57X544WMcHoiNqJPKRz7A=w2400",
+          src: "https://lh4.googleusercontent.com/cb2EDZNrY_LeVS2iLYEIQLJ8PQ-eGkc-Fc_DrAmobz219TUIrM1ORjYxKMY=w2400",
+          alt: "Data Miner image",
+          name: "Filtering",
+        },
+        {
+          type: "image",
+          src: "https://lh5.googleusercontent.com/YYZe_eyCNuhF-XTc9F2q_bNkWYdF-ePSbUS88PQXUBGydt4cB0YDWk4rlX4=w2400",
+          alt: "Data Miner image",
+          name: "Period selection",
+        },
+        {
+          type: "image",
+          src: "https://lh6.googleusercontent.com/-8sV61AtkE3Rkky4IhXqARrr3tRl93z1Sy4gf5nClSnKlH7dL3uMYCJg8yA=w2400",
           alt: "Data Miner image",
           name: "Data Miner",
         },
