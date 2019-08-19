@@ -20,7 +20,7 @@ export class PsybergateSectionConfigService implements IPeriodConfigProvider {
     return {
       title: "Psybergate",
       subTitle: "Graduate Java Engineer",
-      body: "I took part in the 6 month Psybergate graduate program, that covered the Java programming language. " +
+      body: "I was an intern in the 6 month Psybergate graduate program, that covered the Java programming language. " +
         "During this programme we covered everything from the Java object model to JEE and Enterprise server applications.",
       media: [
         {

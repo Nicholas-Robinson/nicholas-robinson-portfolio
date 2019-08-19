@@ -20,7 +20,7 @@ export class EntelectSectionConfigService implements IPeriodConfigProvider {
     return {
       title: "Entelect",
       subTitle: "Junior UI Engineer",
-      body: "As a Junior UI Engineer I was tasked with an AngularJS application to guide users through investment " +
+      body: "As a Junior UI Engineer I created an AngularJS application to guide users through investment " +
         "information and advice for First National Bank (FNB).",
       media: [
         {
