@@ -7,10 +7,6 @@ $dark-accent: mat-palette($mat-grey, A200, A100, A400);
 $dark-warn: mat-palette($mat-cyan);
 $dark-theme: mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
 
-//$primary: mat-color($dark-primary);
-//$accent: mat-color($dark-accent);
-//$warn: mat-color($dark-warn);
-
 .dark-theme {
   @include angular-material-theme($dark-theme);
 

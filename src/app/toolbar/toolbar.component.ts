@@ -27,17 +27,17 @@ export interface ISocialLink {
                       <i [class]="link.icons"></i>
                   </a>
                   <mat-menu #appMenu="matMenu">
-                      <a href="https://drive.google.com/open?id=1DOYL4EmMZ8qW_0ZumQZArmAVhHdcgtZO"
+                      <a href="https://drive.google.com/open?id=1QiSZY36Oqs_lYWjMiWxaIvCht_TAr5rG"
+                         target="_blank"
+                         mat-menu-item>
+                         Resume
+                      </a>
+                      <a href="https://drive.google.com/open?id=1oHIUmwkrqXluM91nC1NKMiHyEVq0WLDJ"
                          target="_blank"
                          mat-menu-item>
                           Curriculum vitae
                       </a>
-                      <a href="https://drive.google.com/open?id=1hSXcqpMtLIkEs9KTnLZ21ebj2BSGhGtW"
-                         target="_blank"
-                         mat-menu-item>
-                          Resume
-                      </a>
-                      <a href="https://drive.google.com/open?id=1PEOmuNznRv6B4iiTnziwmNPrGQIT1rHL"
+                      <a href="https://drive.google.com/open?id=17PwbC47GaxaOGP2Fjusf2sbXcxdxTSuS"
                          target="_blank"
                          mat-menu-item>
                           Cover letter
