@@ -123,7 +123,7 @@ export class GrantaSectionConfigService implements IPeriodConfigProvider {
     return {
       title: "Nielsen Norman Group",
       subTitle: "Attended the NNg UX Conference",
-      body: "Granta presented me with the opportunity to improve my UX skills though the Nielsen Norman Group UX Conference.",
+      body: "Granta presented me with the opportunity to improve my UX skills through the Nielsen Norman Group UX Conference.",
       media: [
         {
           type: "image",
