@@ -12,6 +12,7 @@ import { Component, Input } from "@angular/core";
 
       #period-content {
           margin-left: 165px;
+          margin-bottom: 32px;
           display: flex;
           flex-wrap: wrap;
       }

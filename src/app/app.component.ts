@@ -51,7 +51,7 @@ export class AppComponent {
   @HostBinding("class")
   public activeTheme: "dark-theme" | "light-theme" = "dark-theme";
 
-  public readonly aboutMeBackgroundImage = "https://i.imgur.com/gvizg4A.jpg";
+  public readonly aboutMeBackgroundImage = "https://i.imgur.com/GHkWfd6.jpg";
 
   public config: ITimelineSectionConfig[] = this.configProvider.buildTimelineConfig();
 

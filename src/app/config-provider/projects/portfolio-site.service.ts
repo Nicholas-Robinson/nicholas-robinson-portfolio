@@ -26,7 +26,7 @@ export class PortfolioSiteService implements IPeriodConfigProvider {
       media: [
         {
           type: "image",
-          src: "https://i.imgur.com/tto7852.png",
+          src: "https://i.imgur.com/4WRobyx.png",
           alt: "Portfolio inception",
           name: "Portfolio",
         },
