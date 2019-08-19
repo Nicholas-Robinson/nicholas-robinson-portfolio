@@ -26,6 +26,16 @@ import { Component, Input } from "@angular/core";
       }
 
       @media only screen and (max-width: 800px) {
+          #period-header {
+              flex-direction: column;
+              align-items: flex-start;
+          }
+
+          #period-header a {
+              margin-top: 6px;
+              z-index: 30;
+          }
+
           #period-content {
               margin-left: 100px;
           }
@@ -34,6 +44,12 @@ import { Component, Input } from "@angular/core";
       @media only screen and (max-width: 600px) {
           #period-content {
               margin-left: 80px;
+          }
+      }
+
+      @media only screen and (max-width: 480px) {
+          #period-content {
+              margin-left: 0px;
           }
       }
   `],
@@ -46,7 +62,7 @@ import { Component, Input } from "@angular/core";
           <ng-container *ngIf="logoEndpoint; then linedProfileImage; else profileImage"></ng-container>
 
           <ng-template #profileImage>
-              <img [src]="logoUrl" height="50">
+              <img *ngIf="logoUrl" [src]="logoUrl" height="50">
           </ng-template>
 
           <ng-template #linedProfileImage>
